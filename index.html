@@ -33,20 +33,93 @@
               <svg>
                 <use xlink:href="img/sprites/sprite.svg#play-video"></use>
               </svg>Руководство</a><a class="header__link" href="/">Руководство пользователя</a><a class="header__link" href="/">FAQ</a></div>
-          <div class="header__profile">
+          <div class="header__profile js-openProfile">
             <svg>
               <use xlink:href="img/sprites/sprite.svg#profile"></use>
             </svg>
           </div>
-          <div class="header__lang">
+          <div class="header__lang js-openLang">
             <svg>
               <use xlink:href="img/sprites/sprite.svg#lang"></use>
             </svg>
           </div>
-          <div class="header__burger">
+          <div class="header__burger js-burgerBtn">
             <svg>
               <use xlink:href="img/sprites/sprite.svg#burger"></use>
             </svg>
+          </div>
+        </div>
+        <div class="mobile-menu js-mobileMenu">
+          <div class="container">
+            <div class="mobile-menu__inner"><a class="mobile-menu__link" href="#">FAQ </a><a class="mobile-menu__link" href="#">Свяжитесь с нами</a>
+              <div class="mobile-menu__dropdown"><span class="js-dropdownMenu">Обзор
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#arrow-down-mobile-menu-dropdown"></use>
+                  </svg></span>
+                <ul>
+                  <li><a href="#">Мой профиль </a></li>
+                  <li><a href="#">Безопасность</a></li>
+                  <li><a href="#">Настройки 2FA</a></li>
+                  <li><a href="#">История входа</a></li>
+                </ul>
+              </div>
+              <button class="mobile-menu__btn">Выйти</button>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-lang js-mobileLang">
+          <div class="container">
+            <div class="mobile-lang__inner">
+              <h4 class="mobile-lang__title">Выбрать язык
+                <svg class="js-closeLang">
+                  <use xlink:href="img/sprites/sprite.svg#close"></use>
+                </svg>
+              </h4>
+              <ul class="mobile-lang__items">
+                <li class="mobile-lang__item js-mobileLangItem"><span>EN</span>English</li>
+                <li class="mobile-lang__item js-mobileLangItem active"><span>RU</span>Русский</li>
+                <li class="mobile-lang__item js-mobileLangItem"><span>KZ</span>Kazakh</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="lang js-lang">
+          <div class="lang__inner">
+            <ul class="lang__items">
+              <li class="lang__item js-langItem"><span>EN</span>English</li>
+              <li class="lang__item js-langItem active"><span>RU</span>Русский</li>
+              <li class="lang__item js-langItem"><span>KZ</span>Kazakh</li>
+            </ul>
+          </div>
+        </div>
+        <div class="profile js-profile">
+          <div class="profile__inner">
+            <h4 class="profile__min-title">Обзор</h4>
+            <ul class="profile__items">
+              <li class="profile__item">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#profile"></use>
+                </svg><a href="#">Мой профиль</a>
+              </li>
+              <li class="profile__item">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#security"></use>
+                </svg><a href="#">Безопасность</a>
+              </li>
+              <li class="profile__item">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#key"></use>
+                </svg><a href="#">Настройка 2FA</a>
+              </li>
+              <li class="profile__item">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#clock"></use>
+                </svg><a href="#">История входа</a>
+              </li>
+            </ul><a class="profile__log-out" href="#">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#log-out"></use>
+              </svg>Выйти</a>
           </div>
         </div>
       </header>
@@ -58,15 +131,13 @@
               <div class="intro__content">
                         <h1 class="title intro__title">Рекомендуйте трейдерам биржу <span>Riwatex</span> и увеличивайте свой доход
                         </h1>
-                <p class="intro__text">Станьте партнером Riwatex и осознайте ценность своего влияния</p>
-                        <button class="btn-index intro__btn">Стать партнером
+                <p class="intro__text">Станьте партнером Riwatex и осознайте ценность своего влияния</p><a class="btn-index intro__btn" href="#">Стать партнером
                           <svg>
                             <use xlink:href="img/sprites/sprite.svg#arrow-right"></use>
-                          </svg>
-                        </button>
+                          </svg></a>
               </div>
-              <div class="intro__phones"><img class="intro__img" src="img/intro/phones.png" alt="phones"><img class="intro__bg" src="img/intro/bg-phones.png" alt="bg-phones"><img class="intro__bg--tablet-big" src="img/intro/bg-phones-tablet-big.png" alt="bg-phones"></div>
             </div>
+            <div class="intro__phones"><img class="intro__img" src="img/intro/phones.png" alt="phones"><img class="intro__bg" src="img/intro/bg-phones.png" alt="bg-phones"><img class="intro__bg--tablet-big" src="img/intro/bg-phones-tablet-big.png" alt="bg-phones"></div>
           </div>
         </div>
         <div class="actions">
@@ -169,11 +240,14 @@
               </div>
               <div class="earn__imgs">
                 <div class="earn__main-img"><img src="img/earn/main-img.png" alt="earn-img"></div>
-                <div class="earn__scheme-img"><img src="img/earn/scheme-img.png" alt="scheme-img"></div>
-                <div class="earn__scheme-img-desktop"><img src="img/earn/scheme-img-desktop.png" alt="scheme-img"></div>
+                <div class="earn__scheme-img">
+                  <picture>
+                    <source srcset="img/earn/scheme-img-desktop.png" media="(min-width: 768px)"><img src="img/earn/scheme-img.png" alt="scheme-img">
+                  </picture>
+                </div>
               </div>
-              <div class="earn__bg"><img src="img/earn/bg.png" alt="bg"></div>
             </div>
+            <div class="earn__bg"><img src="img/earn/bg.png" alt="bg"></div>
           </div>
         </div>
         <div class="partner">
@@ -181,12 +255,10 @@
             <div class="partner__inner">
                       <h1 class="title partner__title">Станьте партнером <span>Riwatex</span>
                       </h1>
-              <p class="partner__text">Мы рады сотрудничать с единомышленниками и творческими личностями. Станьте партнером Riwatex и присоединяйтесь к нам в распространении ценностей надежной и безопасной торговли.</p>
-                      <button class="btn-index partner__btn">Подайте заявку прямо сейчас
+              <p class="partner__text">Мы рады сотрудничать с единомышленниками и творческими личностями. Станьте партнером Riwatex и присоединяйтесь к нам в распространении ценностей надежной и безопасной торговли.</p><a class="btn-index partner__btn" href="#">Подайте заявку прямо сейчас
                         <svg>
                           <use xlink:href="img/sprites/sprite.svg#arrow-right"></use>
-                        </svg>
-                      </button>
+                        </svg></a>
             </div>
           </div>
         </div>
@@ -195,7 +267,36 @@
         <div class="container">
           <div class="footer__inner"><span class="footer__copyright">© 2024 Riwatex. Все права защищены</span>
             <div class="footer__links"><a href="#">Партнерское соглашение </a><a href="#">Политика конфиденциальности</a></div>
-            <div class="footer__social-links"><img src="img/footer/icon-1.svg" alt="icon"><img src="img/footer/icon-2.svg" alt="icon"><img src="img/footer/icon-3.svg" alt="icon"><img src="img/footer/icon-4.svg" alt="icon"><img src="img/footer/icon-5.svg" alt="icon"><img src="img/footer/icon-6.svg" alt="icon"><img src="img/footer/icon-7.svg" alt="icon"></div>
+            <ul class="footer__social-links">
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#facebook"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#tiktok"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#reddit"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#discord"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#youtube"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#medium"></use>
+                  </svg></a></li>
+            </ul>
           </div>
         </div>
       </footer>
