@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Riwatex Login</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"> 
+        <div class="header__inner"> <a class="header__logo" href="/"><img src="img/header/logo.svg" alt="Riwatex"></a>
+          <div class="header__links-logout"><a class="header__link" href="/">FAQ</a><a class="header__link" href="/">Свяжитесь с нами</a></div>
+          <div class="header__lang js-openLang">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#lang"></use>
+            </svg>
+          </div><a class="link-btn header__link-btn-simple link-btn--simple" href="#" target="_self">Войти</a><a class="link-btn header__link-btn-green link-btn--green" href="#" target="_self">Подать заявку</a>
+          <div class="header__burger js-burgerBtn">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#burger"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="mobile-menu js-mobileMenu">
+          <div class="container">
+            <div class="mobile-menu__inner"><a class="link-btn mobile-menu__link-btn-simple link-btn--simple" href="#" target="_self">Войти</a><a class="link-btn mobile-menu__link-btn-green link-btn--green" href="#" target="_self">Подать заявку</a><a class="mobile-menu__link" href="#">FAQ </a><a class="mobile-menu__link" href="#">Свяжитесь с нами</a>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-lang mobile-lang--logout js-mobileLang">
+          <div class="container">
+            <div class="mobile-lang__inner">
+              <h4 class="mobile-lang__title">Выбрать язык
+                <svg class="js-closeLang">
+                  <use xlink:href="img/sprites/sprite.svg#close"></use>
+                </svg>
+              </h4>
+              <ul class="mobile-lang__items">
+                <li class="mobile-lang__item js-mobileLangItem"><span>EN</span>English</li>
+                <li class="mobile-lang__item js-mobileLangItem active"><span>RU</span>Русский</li>
+                <li class="mobile-lang__item js-mobileLangItem"><span>KZ</span>Kazakh</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header-profile js-header-profile">
+          <div class="header-profile__inner">
+            <h4 class="header-profile__min-title">Обзор</h4>
+            <ul class="header-profile__items">
+              <li class="header-profile__item">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#profile"></use>
+                </svg><a href="#">Мой профиль</a>
+              </li>
+              <li class="header-profile__item">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#security"></use>
+                </svg><a href="#">Безопасность</a>
+              </li>
+              <li class="header-profile__item">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#key"></use>
+                </svg><a href="#">Настройка 2FA</a>
+              </li>
+              <li class="header-profile__item">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#clock"></use>
+                </svg><a href="#">История входа</a>
+              </li>
+            </ul><a class="header-profile__log-out" href="#">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#log-out"></use>
+              </svg>Выйти</a>
+          </div>
+        </div>
+      </header>
+      <main class="main"> 
+        <div class="application">
+          <div class="container">
+            <div class="application__inner">
+              <ul class="application-steps">
+                <li class="application-steps__item active">1. Заявка на открытие аккаунта</li>
+                <li class="application-steps__item">2. Расскажите о себе</li>
+                <li class="application-steps__item">3. Верификация по эл. почте</li>
+                <li class="application-steps__item">4. Заявка принята</li>
+              </ul>
+              <div class="application-start">
+                <h1 class="application__title">Подать заявку</h1>
+                <p class="application__text">Подайте заявку сегодня и начните зарабатывать в качестве Партнера Riwatex</p>
+                <div class="application__form">
+                                <div class="input__block"> 
+                                  <div class="input__wrap"> 
+                                    <input class="input applicaton-start__input" type="text" id="apply-name" placeholder="Имя">
+                                    <div class="input__error js-inputError">Неверный формат</div>
+                                  </div>
+                                </div>
+                                <div class="input__block"> 
+                                  <div class="input__wrap"> 
+                                    <input class="input applicaton-start__input" type="text" id="apply-surname" placeholder="Фамилия (необязательно)">
+                                    <div class="input__error js-inputError">Неверный формат</div>
+                                  </div>
+                                </div>
+                                <div class="input__block"> 
+                                  <div class="input__wrap"> 
+                                    <input class="input applicaton-start__input" type="text" id="apply-mail" placeholder="Электонная почта">
+                                    <div class="input__error js-inputError">Неверный формат</div>
+                                  </div>
+                                </div>
+                                <div class="input__block"> 
+                                  <div class="input__wrap"> 
+                                    <input class="input applicaton-start__input" type="password" id="apply-password" placeholder="Пароль">
+                                    <div class="input__error js-inputError">Неверный формат</div>
+                                  </div>
+                                  <div class="profile-security__level"> 
+                                    <p class="profile-security__level-label">Надежность:</p>
+                                    <div class="profile-security__level-wrap profile-security__level-wrap--green">   
+                                      <p class="profile-security__level-name">Низкий</p>
+                                      <div class="profile-security__level-icon"><span> </span><span> </span><span> </span></div>
+                                    </div>
+                                  </div>
+                                </div>
+                  <div class="input__block"> </div>
+                  <div class="input__select-phone itc-select js-select">
+                    <button class="input__select-phone-toggle itc-select__toggle" type="button" name="phonecode" value="+7" data-select="toggle" data-index="0"><img src="img/flags/ru.svg", alt="ru"> +7 <span>Российская Федерация</span></button>
+                    <div class="input__select-phone-dropdown itc-select__dropdown">
+                      <ul class="input__select-phone-options itc-select__options js-searchBlock">
+                        <li class="input__select-phone-option itc-select__option" data-select="option" data-value="+994" data-index="0"><img src="img/flags/az.svg", alt="az"> +994 <span>Азербайджан</span></li>
+                        <li class="input__select-phone-option itc-select__option" data-select="option" data-value="+374" data-index="1"><img src="img/flags/am.svg", alt="am"> +374 <span>Армения</span></li>
+                        <li class="input__select-phone-option itc-select__option" data-select="option" data-value="+375" data-index="2"><img src="img/flags/by.svg", alt="by"> +375 <span>Белоруссия</span></li>
+                        <li class="input__select-phone-option itc-select__option" data-select="option" data-value="+7" data-index="3"><img src="img/flags/kz.svg", alt="kz"> +7 <span>Казахстан</span></li>
+                        <li class="input__select-phone-option itc-select__option" data-select="option" data-value="+996" data-index="4"><img src="img/flags/ky.svg", alt="ky"> +996 <span>Кыргызстан</span></li>
+                        <li class="input__select-phone-option itc-select__option" data-select="option" data-value="+998" data-index="5"><img src="img/flags/uz.svg", alt="uz"> +998 <span>Узбекистан</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner"><span class="footer__copyright">© 2024 Riwatex. Все права защищены</span>
+            <div class="footer__links"><a href="#">Партнерское соглашение </a><a href="#">Политика конфиденциальности</a></div>
+            <ul class="footer__social-links">
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#facebook"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#tiktok"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#reddit"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#discord"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#youtube"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#medium"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
