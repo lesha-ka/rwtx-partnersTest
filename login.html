@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Riwatex Login</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"> 
+        <div class="header__inner"> <a class="header__logo" href="/"><img src="img/header/logo.svg" alt="Riwatex"></a>
+          <div class="header__links-logout"><a class="header__link" href="/">FAQ</a><a class="header__link" href="/">Свяжитесь с нами</a></div>
+          <div class="header__lang js-openLang">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#lang"></use>
+            </svg>
+          </div><a class="link-btn header__link-btn-simple link-btn--simple" href="#" target="_self">Войти</a><a class="link-btn header__link-btn-green link-btn--green" href="/apply.html" target="_self">Подать заявку</a>
+          <div class="header__burger js-burgerBtn">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#burger"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="mobile-menu js-mobileMenu">
+          <div class="container">
+            <div class="mobile-menu__inner"><a class="link-btn mobile-menu__link-btn-simple link-btn--simple" href="#" target="_self">Войти</a><a class="link-btn mobile-menu__link-btn-green link-btn--green" href="/apply.html" target="_self">Подать заявку</a><a class="mobile-menu__link" href="#">FAQ </a><a class="mobile-menu__link" href="#">Свяжитесь с нами</a>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-lang mobile-lang--logout js-mobileLang">
+          <div class="container">
+            <div class="mobile-lang__inner">
+              <h4 class="mobile-lang__title">Выбрать язык
+                <svg class="js-closeLang">
+                  <use xlink:href="img/sprites/sprite.svg#close"></use>
+                </svg>
+              </h4>
+              <ul class="mobile-lang__items">
+                <li class="mobile-lang__item js-mobileLangItem"><span>EN</span>English</li>
+                <li class="mobile-lang__item js-mobileLangItem active"><span>RU</span>Русский</li>
+                <li class="mobile-lang__item js-mobileLangItem"><span>KZ</span>Kazakh</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header-profile js-header-profile">
+          <div class="header-profile__inner">
+            <h4 class="header-profile__min-title">Обзор</h4>
+            <ul class="header-profile__items">
+              <li class="header-profile__item">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#profile"></use>
+                </svg><a href="#">Мой профиль</a>
+              </li>
+              <li class="header-profile__item">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#security"></use>
+                </svg><a href="#">Безопасность</a>
+              </li>
+              <li class="header-profile__item">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#key"></use>
+                </svg><a href="#">Настройка 2FA</a>
+              </li>
+              <li class="header-profile__item">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#clock"></use>
+                </svg><a href="#">История входа</a>
+              </li>
+            </ul><a class="header-profile__log-out" href="#">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#log-out"></use>
+              </svg>Выйти</a>
+          </div>
+        </div>
+      </header>
+      <main class="main"> 
+        <div class="login">
+          <div class="container">
+            <div class="login__inner">
+              <div class="login__content js-loginContent">
+                <h1 class="application__title login__title">Вход в партнерский аккаунт</h1>
+                <p class="application__text login__text">Вы соглашаетесь с нашим <a href="#">Партнерским соглашением </a>и <a href="#">Политикой конфиденциальности</a></p>
+                <div class="login__form js-form js-loginForm">
+                          <div class="input__block">
+                            <label class="input__label">Адрес эл. почты:
+                            </label>
+                            <div class="input__wrap"> 
+                              <input class="input login__input js-emailCheck" type="text" placeholder="Введите адрес эл. почты">
+                              <div class="input__error js-inputError">Неверный формат</div>
+                            </div>
+                          </div>
+                          <div class="input__block">
+                            <label class="input__label">Пароль:
+                            </label>
+                            <div class="input__wrap"> 
+                              <input class="input login__input js-inputPass js-emptyCheck" type="password" placeholder="Ваш пароль">
+                              <button class="input__eye js-inputEye" type="button"></button>
+                              <div class="input__error js-inputError">Обязательное поля для заполнения</div>
+                            </div>
+                          </div>
+                          <button class="btn login__btn js-formCheck js-loginBtn">Войти</button>
+                </div>
+                <p class="application__post-text">Забыли пароль?<a href="/password-recovery.html">Восстановить</a></p>
+                <p class="application__post-text">Не являетесь партнером?<a href="/apply.html">Подать заявку</a></p>
+              </div>
+              <div class="login__qr js-loginQr"></div>
+              <div class="login__code js-loginCode">
+                <h1 class="application__title">Проверка Google 2FA</h1>
+                <div class="js-form">
+                          <div class="input__block">
+                            <label class="input__label">Код подтверждения:
+                            </label>
+                            <div class="input__wrap"> 
+                              <input class="input login__input js-emptyCheck" type="text" placeholder="Код подтверждения">
+                              <div class="input__error js-inputError">Обязательно для заполнения</div>
+                            </div>
+                          </div>
+                          <button class="btn login__btn js-formCheck">Отправить</button>
+                </div>
+                <button class="login__give-code-btn">Сбросить проверку безопасности</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner"><span class="footer__copyright">© 2024 Riwatex. Все права защищены</span>
+            <div class="footer__links"><a href="#">Партнерское соглашение </a><a href="#">Политика конфиденциальности</a></div>
+            <ul class="footer__social-links">
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#facebook"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#tiktok"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#reddit"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#discord"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#youtube"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#medium"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
