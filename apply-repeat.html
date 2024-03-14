@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Riwatex Apply-Repeat</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"> 
+        <div class="header__inner"> <a class="header__logo" href="/"><img src="img/header/logo.svg" alt="Riwatex"></a>
+          <div class="header__links-logout"><a class="header__link" href="/">FAQ</a><a class="header__link" href="/">Свяжитесь с нами</a></div>
+          <div class="header__lang js-openLang">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#lang"></use>
+            </svg>
+          </div><a class="link-btn header__link-btn-simple link-btn--simple" href="#" target="_self">Войти</a><a class="link-btn header__link-btn-green link-btn--green" href="/apply.html" target="_self">Подать заявку</a>
+          <div class="header__burger js-burgerBtn">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#burger"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="mobile-menu js-mobileMenu">
+          <div class="container">
+            <div class="mobile-menu__inner"><a class="mobile-menu__link" href="#">FAQ </a><a class="mobile-menu__link" href="#">Свяжитесь с нами</a>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-lang mobile-lang--logout js-mobileLang">
+          <div class="container">
+            <div class="mobile-lang__inner">
+              <h4 class="mobile-lang__title">Выбрать язык
+                <svg class="js-closeLang">
+                  <use xlink:href="img/sprites/sprite.svg#close"></use>
+                </svg>
+              </h4>
+              <ul class="mobile-lang__items">
+                <li class="mobile-lang__item js-mobileLangItem"><span>EN</span>English</li>
+                <li class="mobile-lang__item js-mobileLangItem active"><span>RU</span>Русский</li>
+                <li class="mobile-lang__item js-mobileLangItem"><span>KZ</span>Kazakh</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header-profile js-header-profile">
+          <div class="header-profile__inner">
+            <h4 class="header-profile__min-title">Обзор</h4>
+            <ul class="header-profile__items">
+              <li class="header-profile__item">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#profile"></use>
+                </svg><a href="#">Мой профиль</a>
+              </li>
+              <li class="header-profile__item">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#security"></use>
+                </svg><a href="#">Безопасность</a>
+              </li>
+              <li class="header-profile__item">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#key"></use>
+                </svg><a href="#">Настройка 2FA</a>
+              </li>
+              <li class="header-profile__item">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#clock"></use>
+                </svg><a href="#">История входа</a>
+              </li>
+            </ul><a class="header-profile__log-out" href="#">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#log-out"></use>
+              </svg>Выйти</a>
+          </div>
+        </div>
+      </header>
+      <main class="main"> 
+        <div class="application">
+          <div class="container">
+            <div class="application-steps application-steps--text">
+              <div class="application-steps__item js-numberStep">1<span>. Повторная подача заявки </span></div><img src="img/application/arrow-step.svg" alt="">
+              <div class="application-steps__item js-numberStep">2<span>. Заявка принята</span></div>
+            </div>
+            <div class="application__inner"> 
+              <div class="application-repeat js-applicationStep" data-step="1">
+                <h1 class="application__title">Повторная подача заявки</h1>
+                <p class="application__text">Для продолжения необходимо дополнить информацию в выделенных полях</p>
+                <div class="application__form js-form">
+                  <div class="application__select application__select--wide"><span>Я</span>
+                    <div class="input__block js-selectCheck">
+                      <div class="input__select itc-select js-select">
+                        <button class="input__select-toggle input__select-toggle--big itc-select__toggle" type="button" name="who" value="none" data-select="toggle" data-index="0">...</button>
+                        <div class="input__select-dropdown itc-select__dropdown">
+                          <ul class="input__select-options itc-select__options js-searchBlock">
+                            <li class="input__select-option itc-select__option" data-select="option" data-value="" data-index="0">...</li>
+                            <li class="input__select-option itc-select__option" data-select="option" data-value="Блогер / Влогер" data-index="1"> 
+                              <div class="input__select-icon"> <img src="img/application/camera.svg" alt=""></div>Блогер / Влогер
+                            </li>
+                            <li class="input__select-option itc-select__option" data-select="option" data-value="Создатель контента" data-index="2"> 
+                              <div class="input__select-icon"> <img src="img/application/writing.svg" alt=""></div>Создатель контента
+                            </li>
+                            <li class="input__select-option itc-select__option" data-select="option" data-value="Профессиональный маркетинговый партнер" data-index="3">
+                              <div class="input__select-icon"> <img src="img/application/speaker.svg" alt=""></div>Профессиональный маркетинговый партнер
+                            </li>
+                            <li class="input__select-option itc-select__option" data-select="option" data-value="Трейдер со своим торговым сообещством" data-index="4"> 
+                              <div class="input__select-icon"> <img src="img/application/chart.svg" alt=""></div>Трейдер со своим торговым сообещством
+                            </li>
+                            <li class="input__select-option itc-select__option" data-select="option" data-value="Разработчик торговых инструментов" data-index="5"> 
+                              <div class="input__select-icon"> <img src="img/application/computer.svg" alt=""></div>Разработчик торговых инструментов
+                            </li>
+                            <li class="input__select-option itc-select__option" data-select="option" data-value="Другое" data-index="6"> 
+                              <div class="input__select-icon"> </div>Другое
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="input__error js-inputError">Выберите опцию</div>
+                    </div>
+                  </div>
+                  <div class="application-about__checkboxes js-checkboxes">
+                    <h4 class="application-about__label">Как вы планируете продвигать Riwatex? <span>(минимум 1 вариант)</span></h4>
+                    <div class="application-about__checkboxes-wrapper">
+                      <div class="application-about__checkboxes-column">
+                                <label class="custom-checkbox js-checkboxCheck">
+                                  <input type="checkbox" value="Twitter"><span>Twitter</span>
+                                </label>
+                                <label class="custom-checkbox js-checkboxCheck">
+                                  <input type="checkbox" value="Telegram"><span>Telegram</span>
+                                </label>
+                                <label class="custom-checkbox js-checkboxCheck">
+                                  <input type="checkbox" value="Line"><span>Line</span>
+                                </label>
+                                <label class="custom-checkbox js-checkboxCheck">
+                                  <input type="checkbox" value="KakaoTalk"><span>KakaoTalk</span>
+                                </label>
+                                <label class="custom-checkbox js-checkboxCheck">
+                                  <input type="checkbox" value="VK"><span>VK</span>
+                                </label>
+                                <label class="custom-checkbox js-checkboxCheck">
+                                  <input type="checkbox" value="Поисковый маркетинг (SEM)"><span>Поисковый маркетинг (SEM)</span>
+                                </label>
+                                <label class="custom-checkbox js-checkboxCheck">
+                                  <input type="checkbox" value="Блог"><span>Блог</span>
+                                </label>
+                                <label class="custom-checkbox js-checkboxCheck">
+                                  <input type="checkbox" value="Партнерская сеть"><span>Партнерская сеть</span>
+                                </label>
+                                <label class="custom-checkbox js-checkboxCheck">
+                                  <input type="checkbox" value="Форум"><span>Форум</span>
+                                </label>
+                        <label class="custom-checkbox js-checkboxCheck">
+                          <input class="js-checkboxOther" type="checkbox" value="Другое"><span>Другое</span>
+                        </label>
+                        <div class="input__block application-about__other-input js-otherInputForCheckbox">
+                          <div class="input__wrap"> 
+                            <input class="input js-emptyCheck js-emptyCheckInputWithCheckbox" type="text" id="other" placeholder="Напишите свой вариант">
+                            <div class="input__error js-inputError">Обязательно для заполнения</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="application-about__checkboxes-column">
+                                <label class="custom-checkbox js-checkboxCheck">
+                                  <input type="checkbox" value="YouTube"><span>YouTube</span>
+                                </label>
+                                <label class="custom-checkbox js-checkboxCheck">
+                                  <input type="checkbox" value="Twitch"><span>Twitch</span>
+                                </label>
+                                <label class="custom-checkbox js-checkboxCheck">
+                                  <input type="checkbox" value="Discord"><span>Discord</span>
+                                </label>
+                                <label class="custom-checkbox js-checkboxCheck">
+                                  <input type="checkbox" value="Instagram"><span>Instagram</span>
+                                </label>
+                                <label class="custom-checkbox js-checkboxCheck">
+                                  <input type="checkbox" value="LinkedIn"><span>LinkedIn</span>
+                                </label>
+                                <label class="custom-checkbox js-checkboxCheck">
+                                  <input type="checkbox" value="Facebook"><span>Facebook</span>
+                                </label>
+                                <label class="custom-checkbox js-checkboxCheck">
+                                  <input type="checkbox" value="Одноклассники"><span>Одноклассники</span>
+                                </label>
+                                <label class="custom-checkbox js-checkboxCheck">
+                                  <input type="checkbox" value="Rutube"><span>Rutube</span>
+                                </label>
+                                <label class="custom-checkbox js-checkboxCheck">
+                                  <input type="checkbox" value="Сайты с контентом"><span>Сайты с контентом</span>
+                                </label>
+                      </div>
+                    </div>
+                    <div class="input__error js-inputError js-inputErrorCheckboxes">Выберите хотя бы 1 вариант</div>
+                  </div>
+                  <div class="application-about__contact-data js-contactData">
+                    <h4 class="application-about__label application-about__label--mb">Контактные данные <span>(введите хотя бы 1)</span></h4>
+                    <div class="input__block-social">
+                      <input class="valid input input--social input--social-twitter js-checkContactInput" type="text" value="twitter.com/alekseyzhilyakov">
+                    </div>
+                    <div class="input__block-social">
+                      <input class="error input input--social input--social-telegram js-checkContactInput" type="text" value="alekseyzhilyakov">
+                      <div class="input__error" style="display:block">Необходимо указать ссылку на действующий аккаунт</div>
+                    </div>
+                    <div class="input__block-social">
+                      <input class="input input--social input--social-whatsapp js-checkContactInput" type="text" placeholder="Whatsapp">
+                    </div>
+                    <div class="input__block-social">
+                      <input class="input input--social input--social-telephone js-checkContactInput" type="text" placeholder="Телефон">
+                    </div>
+                    <div class="input__block-social">
+                      <input class="input input--social input--social-website js-checkContactInput" type="text" placeholder="Веб-сайт">
+                    </div>
+                    <div class="input__error js-inputError">Введите хотя бы 1 вариант</div>
+                  </div>
+                  <div class="input__block application-about__last-inputs">
+                    <label class="input__label input__label--img">Ваш 8-значный UID на Riwatex
+                      <svg>
+                        <use xlink:href="img/sprites/sprite.svg#question"></use>
+                      </svg>
+                    </label>
+                    <div class="input__wrap"> 
+                      <input class="input" type="text" value="55492-98" disabled>
+                      <div class="input__error js-inputError">Обязательно для заполнения</div>
+                    </div>
+                  </div>
+                  <div class="input__block input__block--about-apply application-about__last-inputs">
+                    <label class="input__label">Как вы узнали о Партнерской<br> программе Riwatex?</label>
+                    <div class="input__wrap application__select">
+                      <div class="input__select itc-select js-select disabled">
+                        <button class="input__select-toggle itc-select__toggle" type="button" name="phonecode" value="YouTube" data-select="toggle" data-index="0">YouTube</button>
+                      </div>
+                      <div class="input__error js-inputError">Выберите опцию</div>
+                    </div>
+                  </div>
+                  <div class="application-about__btns">
+                            <button class="btn application-about__btn btn--transparent">Отменить подачу заявки</button>
+                            <button class="btn application-about__btn js-formCheck">Отправить</button>
+                  </div>
+                </div>
+                <p class="application__post-text">Уже являетесь партнером Riwatex?<a href="#">Войти</a></p>
+              </div>
+              <div class="application-complete js-applicationStep" data-step="2" style="display: none"><img class="application-complete__img" src="img/application/complete-check.svg" alt="">
+                <h1 class="application__title">Готово</h1>
+                <p class="application__text">
+                   Ваша заявка получена</p>
+                <p class="application__text">
+                   Ваша заявка находится на рассмотрении<br> Мы свяжемся с вами в ближайшее время</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner"><span class="footer__copyright">© 2024 Riwatex. Все права защищены</span>
+            <div class="footer__links"><a href="#">Партнерское соглашение </a><a href="#">Политика конфиденциальности</a></div>
+            <ul class="footer__social-links">
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#facebook"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#tiktok"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#reddit"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#discord"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#youtube"></use>
+                  </svg></a></li>
+              <li><a class="footer__social-link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#medium"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script></script>
+  </body>
+</html>

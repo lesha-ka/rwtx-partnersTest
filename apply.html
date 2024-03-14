@@ -97,38 +97,38 @@
       <main class="main"> 
         <div class="application">
           <div class="container">
+            <div class="application-steps">
+              <div class="application-steps__item js-numberStep">1<span>. Заявка на открытие аккаунта</span></div><img src="img/application/arrow-step.svg" alt="">
+              <div class="application-steps__item js-numberStep">2<span>. Расскажите о себе</span></div><img src="img/application/arrow-step.svg" alt="">
+              <div class="application-steps__item js-numberStep">3<span>. Верификация по эл. почте</span></div><img src="img/application/arrow-step.svg" alt="">
+              <div class="application-steps__item js-numberStep">4<span>. Заявка принята</span></div>
+            </div>
             <div class="application__inner">
-              <div class="application-steps">
-                <div class="application-steps__item js-numberStep">1<span>. Заявка на открытие аккаунта</span></div><img src="img/application/arrow-step.svg" alt="">
-                <div class="application-steps__item js-numberStep">2<span>. Расскажите о себе</span></div><img src="img/application/arrow-step.svg" alt="">
-                <div class="application-steps__item js-numberStep">3<span>. Верификация по эл. почте</span></div><img src="img/application/arrow-step.svg" alt="">
-                <div class="application-steps__item js-numberStep">4<span>. Заявка принята</span></div>
-              </div>
               <div class="application-start js-applicationStep" data-step="1">
                 <h1 class="application__title">Подать заявку</h1>
                 <p class="application__text">Подайте заявку сегодня и начните зарабатывать в качестве Партнера Riwatex</p>
                 <div class="application__form js-form">
                                 <div class="input__block"> 
                                   <div class="input__wrap"> 
-                                    <input class="input applicaton-start__input js-emptyCheck" type="text" id="apply-name" placeholder="Имя">
+                                    <input class="input js-emptyCheck" type="text" id="apply-name" placeholder="Имя">
                                     <div class="input__error js-inputError">Обязательно для заполнения</div>
                                   </div>
                                 </div>
                                 <div class="input__block"> 
                                   <div class="input__wrap"> 
-                                    <input class="input applicaton-start__input" type="text" id="apply-surname" placeholder="Фамилия (необязательно)">
+                                    <input class="input" type="text" id="apply-surname" placeholder="Фамилия (необязательно)">
                                     <div class="input__error js-inputError"></div>
                                   </div>
                                 </div>
                                 <div class="input__block"> 
                                   <div class="input__wrap"> 
-                                    <input class="input applicaton-start__input js-emailCheck" type="text" id="apply-email" placeholder="Электонная почта">
+                                    <input class="input js-emailCheck" type="text" id="apply-email" placeholder="Электонная почта">
                                     <div class="input__error js-inputError">Неверный формат</div>
                                   </div>
                                 </div>
                                 <div class="input__block">
                                   <div class="input__wrap"> 
-                                    <input class="input applicaton-start__input js-inputPass js-inputPassSecurity" type="password" id="apply-password" placeholder="Пароль">
+                                    <input class="input js-emptyCheck js-inputPass js-inputPassSecurity" type="password" id="apply-password" placeholder="Пароль">
                                     <button class="input__eye js-inputEye" type="button"></button>
                                     <ul class="input__password-reqs js-passReqs">
                                       <li class="js-passSize">Длина пароля не менее 10 символов</li>
@@ -136,10 +136,10 @@
                                       <li class="js-passSymbol">Минимум один специальный символ (~!@#$%^&*()+`'";:<>/\|)</li>
                                     </ul>
                                   </div>
-                                  <div class="profile-security__level"> 
+                                  <div class="profile-security__level js-passSecurity">
                                     <p class="profile-security__level-label">Надежность:</p>
-                                    <div class="profile-security__level-wrap profile-security__level-wrap--green">   
-                                      <p class="profile-security__level-name">Высокий</p>
+                                    <div class="profile-security__level-wrap js-passSecurityWrap">
+                                      <p class="profile-security__level-name js-passSecurityName"> </p>
                                       <div class="profile-security__level-icon"><span> </span><span> </span><span> </span></div>
                                     </div>
                                   </div>
@@ -168,14 +168,31 @@
                 <h1 class="application__title">Расскажите о себе</h1>
                 <p class="application__text">Это поможет нам оказать вам наилучшую помощь</p>
                 <div class="application__form js-form">
-                  <div class="application-about__select"><span>Я</span>
+                  <div class="application__select application__select--wide"><span>Я</span>
                     <div class="input__block js-selectCheck">
                       <div class="input__select itc-select js-select">
-                        <button class="input__select-toggle itc-select__toggle" type="button" name="phonecode" value="none" data-select="toggle" data-index="0">...</button>
+                        <button class="input__select-toggle input__select-toggle--big itc-select__toggle" type="button" name="who" value="none" data-select="toggle" data-index="0">...</button>
                         <div class="input__select-dropdown itc-select__dropdown">
                           <ul class="input__select-options itc-select__options js-searchBlock">
-                            <li class="input__select-option itc-select__option" data-select="option" data-value="Инвестор" data-index="0">Инвестор</li>
-                            <li class="input__select-option itc-select__option" data-select="option" data-value="Трейдер" data-index="1">Трейдер</li>
+                            <li class="input__select-option itc-select__option" data-select="option" data-value="" data-index="0">...</li>
+                            <li class="input__select-option itc-select__option" data-select="option" data-value="Блогер / Влогер" data-index="1"> 
+                              <div class="input__select-icon"> <img src="img/application/camera.svg" alt=""></div>Блогер / Влогер
+                            </li>
+                            <li class="input__select-option itc-select__option" data-select="option" data-value="Создатель контента" data-index="2"> 
+                              <div class="input__select-icon"> <img src="img/application/writing.svg" alt=""></div>Создатель контента
+                            </li>
+                            <li class="input__select-option itc-select__option" data-select="option" data-value="Профессиональный маркетинговый партнер" data-index="3">
+                              <div class="input__select-icon"> <img src="img/application/speaker.svg" alt=""></div>Профессиональный маркетинговый партнер
+                            </li>
+                            <li class="input__select-option itc-select__option" data-select="option" data-value="Трейдер со своим торговым сообещством" data-index="4"> 
+                              <div class="input__select-icon"> <img src="img/application/chart.svg" alt=""></div>Трейдер со своим торговым сообещством
+                            </li>
+                            <li class="input__select-option itc-select__option" data-select="option" data-value="Разработчик торговых инструментов" data-index="5"> 
+                              <div class="input__select-icon"> <img src="img/application/computer.svg" alt=""></div>Разработчик торговых инструментов
+                            </li>
+                            <li class="input__select-option itc-select__option" data-select="option" data-value="Другое" data-index="6"> 
+                              <div class="input__select-icon"> </div>Другое
+                            </li>
                           </ul>
                         </div>
                       </div>
@@ -264,7 +281,7 @@
                       <input class="input input--social input--social-telegram js-checkContactInput" type="text" placeholder="@ Telegram">
                     </div>
                     <div class="input__block-social">
-                      <input class="input input--social input--social-line js-checkContactInput" type="text" placeholder="Line">
+                      <input class="input input--social input--social-whatsapp js-checkContactInput" type="text" placeholder="Whatsapp">
                     </div>
                     <div class="input__block-social">
                       <input class="input input--social input--social-telephone js-checkContactInput" type="text" placeholder="Телефон">
@@ -287,13 +304,14 @@
                   </div>
                   <div class="input__block input__block--about-apply application-about__last-inputs js-selectCheck">
                     <label class="input__label">Как вы узнали о Партнерской<br> программе Riwatex?</label>
-                    <div class="input__wrapper-for-error">
+                    <div class="input__wrap application__select">
                       <div class="input__select itc-select js-select">
                         <button class="input__select-toggle itc-select__toggle" type="button" name="phonecode" value="none" data-select="toggle" data-index="0">...</button>
                         <div class="input__select-dropdown itc-select__dropdown">
                           <ul class="input__select-options itc-select__options js-searchBlock">
-                            <li class="input__select-option itc-select__option" data-select="option" data-value="Источник 1" data-index="0">Источник 1</li>
-                            <li class="input__select-option itc-select__option" data-select="option" data-value="Источник 2" data-index="1">Источник 2</li>
+                            <li class="input__select-option itc-select__option" data-select="option" data-value="" data-index="0">...</li>
+                            <li class="input__select-option itc-select__option" data-select="option" data-value="Источник 1" data-index="1">Источник 1</li>
+                            <li class="input__select-option itc-select__option" data-select="option" data-value="Источник 2" data-index="2">Источник 2</li>
                           </ul>
                         </div>
                       </div>
